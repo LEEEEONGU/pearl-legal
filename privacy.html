@@ -1,0 +1,84 @@
+<!doctype html><html lang="zh-CN"><head><meta charset="utf-8"><meta name="viewport" content="width=device-width,initial-scale=1"><title>珍珠收益 · 隐私政策</title><style>:root{--bg:#f5f3ef;--ink:#1d1b18;--mute:#6f6a64;--acc:#b86a3c;--line:#e2dcd4}
+@media (prefers-color-scheme:dark){:root{--bg:#121110;--ink:#f3efe9;--mute:#a8a29e;--acc:#e6a173;--line:#2e2b28}}
+body{margin:0;background:var(--bg);color:var(--ink);font:16px/1.7 -apple-system,"PingFang SC","Hiragino Sans GB",sans-serif}
+main{max-width:720px;margin:0 auto;padding:32px 16px 64px}h1{font-size:26px}h2{font-size:18px;margin-top:28px}
+a{color:var(--acc)}table{border-collapse:collapse;width:100%;font-size:14px;display:block;overflow-x:auto}
+th,td{border:1px solid var(--line);padding:6px 8px;text-align:left;vertical-align:top}nav{font-size:14px;margin-bottom:24px}</style></head><body><main><nav><a href="index.html">珍珠收益</a> · <a href="privacy.html">隐私政策</a> · <a href="terms.html">使用条款</a></nav><h1>隐私政策</h1>
+<p>更新日期：2026 年 11 月 17 日</p>
+<p>珍珠收益（以下称「本 App」）是一个个人收益记账看板。我们的原则是：<strong>你的持仓和收益只存在你自己的手机和你自己的 iCloud 里，我们看不到，也不收集。</strong> 例外只有两种情况：你主动登录（见「登录」），或者你主动使用 AI 助手（见「AI 助手」）。这两种情况下信息会经过我们在阿里云上的两个云函数，见「我们的服务器」。</p>
+<h2>不登录也能完整使用</h2>
+<ul>
+<li>记账、看板、统计、截图导入等功能都不需要登录。</li>
+<li>不连接你的银行账户，不读取银行 App 里的任何数据，不代你买卖。</li>
+<li>不使用广告或追踪 SDK，不做跨 App 追踪。</li>
+<li>唯一的第三方 SDK 是一键登录用的阿里云号码认证 SDK。它会为完成号码认证、做服务统计处理网络类型和设备信息，只在你同意本政策后、打开登录卡片时才初始化，详见「第三方 SDK 和服务清单」。</li>
+</ul>
+<h2>我们的服务器</h2>
+<p>本 App 没有存放你理财数据的服务器。我们只在阿里云函数计算上放了两个云函数，都不保存你的持仓、收益或对话：</p>
+<ul>
+<li><strong>AI 转发</strong>：你主动使用 AI 助手时，把请求转给大模型，再把回答返回给你（见「AI 助手」）。</li>
+<li><strong>一键登录换号</strong>：你用本机号码一键登录时，用运营商给的一次性凭证换出你的手机号，直接返回给你的手机，不保存（见「登录」）。</li>
+</ul>
+<p>iCloud 同步不经过这两个云函数，也不经过我们的任何服务器。</p>
+<h2>登录（可选）</h2>
+<p>登录只是在这台手机上记下你的身份，用来显示登录状态和称呼你。不登录不影响任何记账功能，也可以开始 7 天 PRO 试用。数据跨设备同步靠你自己的 iCloud，会员跟着你的 Apple ID（换手机后在会员页点「恢复购买」），这两件事和登不登录无关。</p>
+<p><strong>本机号码一键登录</strong></p>
+<ul>
+<li>你在登录卡片上勾选同意协议并点「本机号码一键登录」后，由中国移动、中国联通或中国电信（以下称「运营商」）通过阿里云号码认证服务确认这台手机当前使用的手机号。</li>
+<li>运营商返回的是一次性凭证，我们的服务器用它换出你的手机号，再直接返回给你的手机。<strong>服务器不保存你的手机号</strong>，只做这一次转换。</li>
+<li>手机号只保存在这台手机的系统钥匙串里，用来显示「已登录」。退出登录或注销账号时会一并删除；删除本 App 后重新安装，第一次打开时也会清掉。</li>
+<li>一键登录要使用移动数据网络。为了完成号码认证，阿里云号码认证 SDK 会收集网络类型和设备信息，详见下方「第三方 SDK 和服务清单」。</li>
+</ul>
+<p><strong>通过 Apple 登录</strong></p>
+<ul>
+<li>由 Apple 处理。我们只拿到 Apple 给本 App 的一个用户编号；如果你在首次授权时选择分享，还会拿到你的名字和邮箱。你也可以选择隐藏邮箱。</li>
+<li>这些信息只保存在本机，用来显示登录状态和称呼你，不上传到我们的服务器。退出登录、注销账号，或删除 App 后重新安装第一次打开时，都会清掉。</li>
+<li>你可以随时在 iPhone「设置」›（你的名字）›「登录与安全」›「通过 Apple 登录」中停止本 App 使用你的 Apple 账户。</li>
+</ul>
+<h2>数据存在哪里</h2>
+<ul>
+<li>你添加的产品、持有金额、每日收益、关注原因等，保存在本机的 App 数据里。</li>
+<li>如果你的手机登录了 iCloud，这些数据还会同步到你本人 Apple 账号下的 iCloud 私有空间（由 Apple 提供和加密），用于在你的多台设备之间同步、换手机后恢复。这部分空间只有你本人能访问，我们无法读取。</li>
+<li>没登录 iCloud 时，数据只在本机；删除本 App 会一并删除，我们无法恢复。</li>
+<li>7 天 PRO 试用的开始时间保存在本机系统钥匙串里，删除 App 后仍会保留，只用来防止重复领取试用，不包含任何个人信息。要删除 iCloud 里的副本，可在 iPhone「设置」›（你的名字）› iCloud ›「管理储存空间」中删除本 App 的数据。</li>
+<li>你主动导出的文件（如收益记录 CSV）由你自己保管和分享。</li>
+</ul>
+<h2>本 App 会访问的内容</h2>
+<ul>
+<li><strong>相册（仅在你使用截图导入时）</strong>：只读取你选中的那几张截图，在手机本地用系统的文字识别功能认出产品和金额，图片不上传、不保存。</li>
+<li><strong>网络</strong>：为了自动计算收益，本 App 会查询你所记录产品公开披露的净值。请求里只包含产品代码，不包含任何个人信息。</li>
+<li><strong>文件</strong>：你从「文件」里选择导入的备份，只在本机读取。</li>
+</ul>
+<h2>AI 助手「珍珠」</h2>
+<ul>
+<li>只有你主动在 AI 页发消息或发截图时才会用到。你发的文字、截图里认出的文字，以及为了回答问题需要的产品名称、金额和收益记录，会经我们的 AI 转发云函数，交给阿里云百炼平台上的 DeepSeek 大模型处理，再把回答返回给你。截图图片本身不上传，只上传在手机上认出的文字。</li>
+<li><strong>设备标识</strong>：每次 AI 请求会带上本 App 在这台手机上的设备标识（Apple 提供的 identifierForVendor，只在本 App 内有效，不能用来跨 App 追踪），用来统计这台手机当天用了几次、防止被人刷接口。这个计数只在云函数的内存里保留到当天结束，不和你的手机号、Apple 账户关联，不用于追踪或广告。</li>
+<li>我们的服务器只做转发，不保存对话内容；阿里云按其服务协议处理请求，不会用来训练模型。</li>
+<li>不用 AI 页，就不会有任何数据发出去。对话记录和珍珠的「记忆」保存在你的手机里；手机登录了 iCloud 时，会和其他数据一样同步到你自己的 iCloud 私有空间（我们读不到）。可以在 AI 页随时清空。</li>
+</ul>
+<h2>第三方 SDK 和服务清单</h2>
+<table>
+<tr><th>名称</th><th>提供方</th><th>用途</th><th>处理的信息</th><th>何时使用</th></tr>
+<tr><td>阿里云号码认证 SDK</td><td>阿里云计算有限公司</td><td>本机号码一键登录</td><td>网络类型；设备信息：IP 地址、设备制造商、设备型号、手机操作系统、SIM 卡状态</td><td>你同意本政策后，打开登录卡片时</td></tr>
+<tr><td>运营商认证服务</td><td>中国移动 / 中国联通 / 中国电信</td><td>确认本机手机号</td><td>本机手机号</td><td>你在登录卡片上同意运营商认证服务条款并点登录时</td></tr>
+<tr><td>DeepSeek 大模型（经阿里云百炼调用）</td><td>阿里云计算有限公司（百炼平台）</td><td>AI 助手回答问题</td><td>你发给 AI 的文字和相关收益记录</td><td>你主动使用 AI 页时</td></tr>
+<tr><td>阿里云函数计算（我们的 AI 转发、一键登录换号云函数）</td><td>阿里云计算有限公司</td><td>转发 AI 请求、用一次性凭证换出手机号</td><td>AI 请求内容和设备标识（只转发，设备标识计数当天清除）；一键登录的一次性凭证和换出的手机号（不保存）</td><td>你主动使用 AI 页或一键登录时</td></tr>
+<tr><td>通过 Apple 登录、App 内购买、iCloud</td><td>Apple</td><td>登录、会员订阅、数据同步</td><td>由 Apple 按其隐私政策处理</td><td>你主动使用这些功能时</td></tr>
+</table>
+<p>阿里云号码认证服务的隐私政策：https://terms.aliyun.com/legal-agreement/terms/suit_bu1_ali_cloud/suit_bu1_ali_cloud202112211045_86198.html</p>
+<p>运营商认证服务条款在登录卡片上可以直接点开查看。</p>
+<h2>会员购买</h2>
+<p>会员订阅通过 Apple 的 App 内购买完成，支付由 Apple 处理。我们拿不到你的 Apple ID、支付方式或任何付款信息，只会从 Apple 收到「是否为会员、到期时间」这一状态，用来在本机开启会员功能。</p>
+<h2>你的权利</h2>
+<ul>
+<li><strong>查看和更正</strong>：你记录的所有数据都在 App 里，可以随时查看、修改。</li>
+<li><strong>删除</strong>：可以在 App 里删除任意产品和记录；退出登录会删除本机保存的登录信息；删除 App 会删除本机的 App 数据（登录信息在重新安装后第一次打开时清掉）。</li>
+<li><strong>注销账号</strong>：在「我的 › 账户 › 注销账号」可以注销。我们的服务器上没有保存你的账号，注销会清掉这台手机上的手机号、Apple 用户编号、名字和邮箱；你记的收益数据不在账号里，可以在 App 里自行删除。用过「通过 Apple 登录」的，还可以在 iPhone「设置」›（你的名字）›「登录与安全」›「通过 Apple 登录」里停止本 App 使用你的 Apple 账户。</li>
+<li><strong>撤回同意</strong>：不再使用登录和 AI 功能，就不会再有对应的信息处理。</li>
+</ul>
+<h2>未成年人</h2>
+<p>本 App 面向成年人的个人理财记录。如果你未满 18 周岁，请在监护人指导下使用。</p>
+<h2>政策变更</h2>
+<p>如果本政策有变化，我们会更新本页并修改上方的更新日期；重大变化会在 App 内提示。</p>
+<h2>联系我们</h2>
+<p>对本政策有任何疑问，请联系：<a href="mailto:737469819@qq.com">737469819@qq.com</a></p></main></body></html>
